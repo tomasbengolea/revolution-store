@@ -22,7 +22,7 @@ p, li {
 
 /* -+-+-+-+-+-+-+-+-+-+-+-+ HEADER -+-+-+-+-+-+-+-+-+-+-+-+ */
 
-nav {
+/* nav {
     display: flex;
     background-color: #131313;
     justify-content: space-between;
@@ -48,8 +48,26 @@ nav {
     padding: 10px;
     border-radius: 10px;
     font-weight: 600;
-}
+} */
 
+.bg-color {
+    background-color: #ffff;
+}
+.offcanvas.show {
+    border: 1px solid #131313;
+  }
+.navbar-brand, .offcanvas-title {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 1000;
+    color: #131313;
+}
+.nav-link {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #131313;
+}
 /* -+-+-+-+-+-+-+-+-+-+-+-+ MAIN -+-+-+-+-+-+-+-+-+-+-+-+ */
 
 /* ------------ INDEX ------------ */

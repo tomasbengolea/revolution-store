@@ -62,6 +62,9 @@ p, li {
     font-weight: 1000;
     color: #131313;
 }
+.navbar-nav {
+    gap: 25px;
+}
 .nav-link {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 25px;
@@ -296,6 +299,10 @@ input, textarea, button {
 }
 .footer p {
     font-size: 15px;
+    color: #ffff;
+}
+.footer-list li  i {
+    padding: 10px;
     color: #ffff;
 }
 

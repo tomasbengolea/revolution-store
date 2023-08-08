@@ -22,34 +22,6 @@ p, li {
 
 /* -+-+-+-+-+-+-+-+-+-+-+-+ HEADER -+-+-+-+-+-+-+-+-+-+-+-+ */
 
-/* nav {
-    display: flex;
-    background-color: #131313;
-    justify-content: space-between;
-    padding: 20px;
-    font-family: 'Work Sans', sans-serif;
-}
-.nav-logo {
-    font-size: 30px;
-    font-weight: 800;
-    color: #ffff;
-}
-.nav-list {
-    display: flex;
-    gap: 30px;
-}
-.nav-link {
-    font-size: 25px;
-    color: #ffff;
-}
-.nav-btn {
-    background-color: #ffff;
-    color: #131313;
-    padding: 10px;
-    border-radius: 10px;
-    font-weight: 600;
-} */
-
 .bg-color {
     background-color: #ffff;
 }
@@ -71,6 +43,7 @@ p, li {
     font-weight: 600;
     color: #131313;
 }
+
 /* -+-+-+-+-+-+-+-+-+-+-+-+ MAIN -+-+-+-+-+-+-+-+-+-+-+-+ */
 
 /* ------------ INDEX ------------ */
@@ -146,15 +119,15 @@ p, li {
 /* Banner */
 
 .banner {
-    display: flex;
     background-color: #ffff;
     padding: 30px;
+    display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 50px;
 }
 .banner img {
-    width: 500px;
-    height: 500px;
+    width: 30%;
+    height: 30%;
     object-fit: cover;
 }
 
@@ -329,20 +302,10 @@ input, textarea, button {
 
 @media only screen and (max-width: 895px) {
 
-    /* NAV */
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
+    /* HTML MARCAS */
+    .banner {
+        gap: 40px;
     }
-
-        /* HTML INDEX */
-        .descrip-body h1 {
-            font-size: 35px;
-        }
-        .mapa-descrip h2 {
-            font-size: 35px;
-        }
 
     /* HTML CONTACTO */
     .formulario {
@@ -393,6 +356,11 @@ input, textarea, button {
         width: 90%;
     }
 
+    /* HTML MARCAS */
+    .banner {
+        gap: 30px;
+    }
+
     /* HTML CONTACTO */
     .contacto-texto {
         width: 90%;
@@ -400,13 +368,6 @@ input, textarea, button {
 }
 
 @media only screen and (max-width: 595px) {
-
-    /* NAV */
-    .nav-list {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
 
     /* HTML INDEX */
     .card-descrip img {
@@ -419,6 +380,11 @@ input, textarea, button {
     /* HTML INDEX */
     .mapa-body iframe {
         height: 300px;
+    }
+
+    /* HTML MARCAS */
+    .banner {
+        gap: 20px;
     }
 
     /* HTML CONTACTO */

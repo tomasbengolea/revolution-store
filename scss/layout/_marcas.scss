@@ -6,11 +6,12 @@
     display: flex;
     justify-content: center;
     gap: 50px;
-}
-.banner img {
-    width: 30%;
-    height: 30%;
-    object-fit: cover;
+
+    img {
+        width: 30%;
+        height: 30%;
+        object-fit: cover;
+    }
 }
 
 .info-marca {
@@ -21,15 +22,17 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-}
-.info-marca h1, .info-marca p {
-    font-size: 25px;
-    color: #ffff;
-    width: 50%;
-    text-align: center;
-}
-.info-marca h1 {
-    font-size: 40px;
+
+    h1, p {
+        font-size: 25px;
+        color: #ffff;
+        width: 50%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
 }
 
 /* Logo de la Marca */
@@ -37,12 +40,13 @@
     background-color: #ffff;
     padding: 30px;
     text-align: center;
-}
-.logo-marca img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    margin: 30px;
+
+    img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        margin: 30px;
+    }
 }
 
 /* Productos */
@@ -57,11 +61,12 @@
 .body-product {
     width: 100%;
     height: 100%;
-}
-.body-product img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50px;
-    border: 4px solid #131313;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50px;
+        border: 4px solid #131313;
+    }
 }

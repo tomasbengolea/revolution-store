@@ -3,25 +3,28 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-.footer img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+
+    img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    p {
+        font-size: 15px;
+        color: #ffff;
+    }
 }
 .footer-list {
     display: flex;
     gap: 30px;
+
+    li  i {
+        padding: 10px;
+        color: #ffff;
+    }
 }
 .footer-link {
     font-size: 20px;
-    color: #ffff;
-}
-.footer p {
-    font-size: 15px;
-    color: #ffff;
-}
-.footer-list li  i {
-    padding: 10px;
     color: #ffff;
 }

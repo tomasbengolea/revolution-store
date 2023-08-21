@@ -1,0 +1,70 @@
+/* Carta de Presentacion */
+
+.card-principal {
+    background-color: #231f20;
+}
+.card-descrip {
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    gap: 15%;
+}
+.card-descrip img {
+    object-fit: cover;
+    width: 30%;
+    height: 400px;
+}
+.descrip-body {
+    width: 40%;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 30px;
+}
+.descrip-body h1 {
+    font-size: 40px;
+}
+.descrip-body p {
+    font-size: 20px;
+}
+
+/* Mapa */
+
+.card-mapa {
+    background-color: #ffff;
+}
+.mapa-body {
+    width: 100%;
+    display: flex;
+    padding: 30px 50px;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    gap: 15%;
+}
+.mapa-body iframe {
+    object-fit: cover;
+    width: 40%;
+    height: 400px;
+    transition: 0.5s;
+}
+.mapa-body iframe:hover {
+    width: 50%;
+    height: 450px;
+}
+.mapa-descrip {
+    width: 40%;
+    color: #131313;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 30px;
+}
+.mapa-descrip h2 {
+    font-size: 40px;
+}
+.mapa-descrip p {
+    font-size: 20px;
+}

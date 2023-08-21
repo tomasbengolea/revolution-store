@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Work+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* -+-+-+-+-+-+-+-+-+-+-+-+ FUENTES -+-+-+-+-+-+-+-+-+-+-+-+ */
+h1, h2 {
+    font-family: 'Work Sans', sans-serif;
+}
+p, li {
+    font-family: 'Roboto Condensed', sans-serif;
+}

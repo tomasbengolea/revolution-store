@@ -1,0 +1,47 @@
+/* Formulario */
+.formulario {
+    background-color: #231f20;
+    color: #ffff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.tarjeta-form {
+    width: 350px;
+    padding: 10px;
+    background-color: rgb(49, 46, 46);
+    border: 2px solid #ffff;
+    border-radius: 10px;
+}
+.tarjeta-form h1 {
+    font-size: 40px;
+    padding: 10px;
+}
+.form-content {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 5px;
+}
+input, textarea, button {
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Info Formulario */
+.contacto-texto{
+    text-align: right;
+    width: 50%;
+    gap: 30px;
+}
+.contacto-texto h2, .contacto-texto p{
+    font-size: 20px;
+    color: #ffff;
+    width: 100%;
+    padding: 10px;
+}
+.contacto-texto h2 {
+    font-size: 40px;
+}

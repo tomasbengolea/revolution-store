@@ -7,6 +7,14 @@
     gap: $gap;
 }
 
+@mixin flex-column($justify, $align, $gap) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
 @mixin imagenes($width, $height, $object) {
     width: $width;
     height: $height;

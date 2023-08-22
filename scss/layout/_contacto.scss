@@ -20,7 +20,7 @@
 .form-content {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 25px;
-    @include flex(column, none, none, 5px);
+    @include flex-column(none, none, 5px);
     padding: 5px;
 }
 input, textarea, button {

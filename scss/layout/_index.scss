@@ -16,7 +16,8 @@
 .descrip-body {
     width: 40%;
     color: $color-fuente1;
-    @include flex(column, none, right, 30px);
+    @include flex-column(none, right, 30px);
+
 
     h1 {
         font-size: 40px;
@@ -53,7 +54,7 @@
 .mapa-descrip {
     width: 40%;
     color: $color-fuente2;
-    @include flex(column, none, left, 30px);
+    @include flex-column(none, left, 30px);
 
     h2 {
         font-size: 40px;

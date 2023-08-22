@@ -14,7 +14,7 @@
     background-color: $bg-color-primary;
     padding: 30px;
     width: 100%;
-    @include flex(column, none, center, 20px);
+    @include flex-column(none, center, 20px);
 
     h1, p {
         font-size: 25px;
@@ -52,10 +52,17 @@
 .body-product {
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    transition: 0.3s;
+    border-radius: 50px;
+    border: 4px solid #131313;
 
     img {
         @include imagenes (100%, 100%, cover);
-        border-radius: 50px;
-        border: 4px solid #131313;
+        transition: 0.3s;
+
+        &:hover {
+            transform: scale(1.2,1.2);
+        }
     }
 }

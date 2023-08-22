@@ -1,30 +1,22 @@
 /* Carta de Presentacion */
 
 .card-principal {
-    background-color: #231f20;
+    background-color: $bg-color-primary;
 }
 .card-descrip {
     width: 100%;
-    display: flex;
+    @include flex(none, space-evenly, flex-end, 15%);
     padding: 30px;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    gap: 15%;
 
     img {
-        object-fit: cover;
-        width: 30%;
-        height: 400px;
+        @include imagenes (30%, 400px, cover);
     }
 }
 
 .descrip-body {
     width: 40%;
-    color: #ffff;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    gap: 30px;
+    color: $color-fuente1;
+    @include flex(column, none, right, 30px);
 
     h1 {
         font-size: 40px;
@@ -39,20 +31,15 @@
 /* Mapa */
 
 .card-mapa {
-    background-color: #ffff;
+    background-color: $bg-color-secondary;
 }
 .mapa-body {
     width: 100%;
-    display: flex;
+    @include flex(none, space-evenly, flex-end, 15%);
     padding: 30px 50px;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    gap: 15%;
 
     iframe {
-        object-fit: cover;
-        width: 40%;
-        height: 400px;
+        @include imagenes (40%, 400px, cover);
         transition: 0.5s;
 
         &:hover {
@@ -64,11 +51,8 @@
 
 .mapa-descrip {
     width: 40%;
-    color: #131313;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    gap: 30px;
+    color: $color-fuente2;
+    @include flex(column, none, left, 30px);
 
     h2 {
         font-size: 40px;

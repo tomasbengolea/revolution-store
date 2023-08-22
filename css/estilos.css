@@ -27,6 +27,12 @@ p {
 }
 
 @media only screen and (max-width: 1060px) {
+  /* HTNL INDEX */
+  .card-descrip {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
   /* HTML CONTACTO */
   .contacto-texto h2 {
     font-size: 30px;
@@ -71,15 +77,6 @@ p {
 }
 @media only screen and (max-width: 695px) {
   /* HTNL INDEX */
-  .card-descrip {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-  .descrip-body {
-    width: 90%;
-    text-align: center;
-  }
   .mapa-body {
     flex-direction: column;
     align-items: center;
@@ -176,7 +173,7 @@ p {
   font-family: "Work Sans", sans-serif;
   font-size: 30px;
   font-weight: 1000;
-  color: #131313;
+  color: #231f20;
 }
 
 .navbar-nav {
@@ -187,14 +184,16 @@ p {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 25px;
   font-weight: 600;
-  color: #131313;
+  color: #231f20;
 }
 
 .footer {
   background-color: #040001;
   display: flex;
+  flex-direction: none;
   justify-content: space-around;
   align-items: center;
+  gap: none;
 }
 .footer img {
   width: 200px;
@@ -208,6 +207,9 @@ p {
 
 .footer-list {
   display: flex;
+  flex-direction: none;
+  justify-content: none;
+  align-items: none;
   gap: 30px;
 }
 .footer-list li i {
@@ -228,15 +230,16 @@ p {
 .card-descrip {
   width: 100%;
   display: flex;
-  padding: 30px;
+  flex-direction: none;
   justify-content: space-evenly;
   align-items: flex-end;
   gap: 15%;
+  padding: 30px;
 }
 .card-descrip img {
-  object-fit: cover;
   width: 30%;
   height: 400px;
+  object-fit: cover;
 }
 
 .descrip-body {
@@ -244,7 +247,8 @@ p {
   color: white;
   display: flex;
   flex-direction: column;
-  text-align: right;
+  justify-content: none;
+  align-items: right;
   gap: 30px;
 }
 .descrip-body h1 {
@@ -263,15 +267,16 @@ p {
 .mapa-body {
   width: 100%;
   display: flex;
-  padding: 30px 50px;
+  flex-direction: none;
   justify-content: space-evenly;
   align-items: flex-end;
   gap: 15%;
+  padding: 30px 50px;
 }
 .mapa-body iframe {
-  object-fit: cover;
   width: 40%;
   height: 400px;
+  object-fit: cover;
   transition: 0.5s;
 }
 .mapa-body iframe:hover {
@@ -284,7 +289,8 @@ p {
   color: #131313;
   display: flex;
   flex-direction: column;
-  text-align: left;
+  justify-content: none;
+  align-items: left;
   gap: 30px;
 }
 .mapa-descrip h2 {
@@ -297,10 +303,12 @@ p {
 /* Banner */
 .banner {
   background-color: white;
-  padding: 30px;
   display: flex;
+  flex-direction: none;
   justify-content: center;
+  align-items: none;
   gap: 50px;
+  padding: 30px;
 }
 .banner img {
   width: 30%;
@@ -314,13 +322,14 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: none;
   align-items: center;
   gap: 20px;
 }
 .info-marca h1, .info-marca p {
   font-size: 25px;
   color: white;
-  width: 50%;
+  width: 70%;
   text-align: center;
 }
 .info-marca h1 {
@@ -368,7 +377,10 @@ p {
   color: white;
   padding: 30px;
   display: flex;
+  flex-direction: none;
   justify-content: space-between;
+  align-items: none;
+  gap: none;
 }
 
 .tarjeta-form {
@@ -388,8 +400,10 @@ p {
   font-size: 25px;
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  justify-content: none;
+  align-items: none;
   gap: 5px;
+  padding: 5px;
 }
 
 input, textarea, button {

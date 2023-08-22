@@ -1,10 +1,9 @@
 /* Formulario */
 .formulario {
-    background-color: #231f20;
-    color: #ffff;
+    background-color: $bg-color-primary;
+    color: $color-fuente1;
     padding: 30px;
-    display: flex;
-    justify-content: space-between;
+    @include flex(none, space-between, none, none);
 }
 .tarjeta-form {
     width: 350px;
@@ -21,10 +20,8 @@
 .form-content {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 25px;
-    display: flex;
-    flex-direction: column;
+    @include flex(column, none, none, 5px);
     padding: 5px;
-    gap: 5px;
 }
 input, textarea, button {
     font-size: 20px;
@@ -39,7 +36,7 @@ input, textarea, button {
 
     h2, p{
         font-size: 20px;
-        color: #ffff;
+        color: $color-fuente1;
         width: 100%;
         padding: 10px;
     }

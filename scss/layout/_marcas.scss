@@ -1,32 +1,25 @@
 /* Banner */
 
 .banner {
-    background-color: #ffff;
+    background-color: $bg-color-secondary;
+    @include flex(none, center, none, 50px);
     padding: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
 
     img {
-        width: 30%;
-        height: 30%;
-        object-fit: cover;
+        @include imagenes (30%, 30%, cover);
     }
 }
 
 .info-marca {
-    background-color: #231f20;
+    background-color: $bg-color-primary;
     padding: 30px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    @include flex(column, none, center, 20px);
 
     h1, p {
         font-size: 25px;
-        color: #ffff;
-        width: 50%;
+        color: $color-fuente1;
+        width: 70%;
         text-align: center;
     }
 
@@ -37,21 +30,19 @@
 
 /* Logo de la Marca */
 .logo-marca {
-    background-color: #ffff;
+    background-color: $bg-color-secondary;
     padding: 30px;
     text-align: center;
 
     img {
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
+        @include imagenes (300px, 300px, cover);
         margin: 30px;
     }
 }
 
 /* Productos */
 .card-product {
-    background-color: #ffff;
+    background-color: $bg-color-secondary;
     padding: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -63,9 +54,7 @@
     height: 100%;
 
     img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        @include imagenes (100%, 100%, cover);
         border-radius: 50px;
         border: 4px solid #131313;
     }

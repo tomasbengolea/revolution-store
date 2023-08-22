@@ -212,6 +212,12 @@ p {
   align-items: none;
   gap: 30px;
 }
+.footer-list li {
+  transition: 0.3s;
+}
+.footer-list li:hover {
+  transform: scale(1.1, 1.1);
+}
 .footer-list li i {
   padding: 10px;
   color: white;
@@ -280,8 +286,7 @@ p {
   transition: 0.5s;
 }
 .mapa-body iframe:hover {
-  width: 50%;
-  height: 450px;
+  transform: scale(1.05, 1.05);
 }
 
 .mapa-descrip {

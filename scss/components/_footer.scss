@@ -15,10 +15,18 @@
 .footer-list {
     @include flex(none, none, none, 30px);
 
-    li  i {
-        padding: 10px;
-        color: $bg-color-secondary;
-    }
+    li {
+        transition: 0.3s;
+
+        &:hover {
+            transform: scale(1.1,1.1);
+        }
+
+        i {
+            padding: 10px;
+            color: $bg-color-secondary;
+        }
+    } 
 }
 .footer-link {
     font-size: 20px;

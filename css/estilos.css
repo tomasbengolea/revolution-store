@@ -26,139 +26,56 @@ p {
   line-height: 1.7;
 }
 
-@media only screen and (max-width: 1060px) {
-  /* HTNL INDEX */
-  .card-descrip {
-    flex-direction: column;
+@media only screen and (max-width: 1080px) {
+  .formulario {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: none;
     align-items: center;
     gap: 30px;
   }
-  /* HTML CONTACTO */
-  .contacto-texto h2 {
-    font-size: 30px;
+  .formulario .contacto-texto {
+    width: 90%;
+    text-align: center;
   }
-  /* FOOTER */
+  .formulario .contacto-texto p {
+    text-align: center;
+  }
   .footer {
+    display: flex;
     flex-direction: column;
+    justify-content: none;
+    align-items: none;
     gap: 20px;
     padding: 10px;
   }
 }
-@media only screen and (max-width: 950px) {
-  /* HTML PRODUCTOS */
-  .card-product {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 @media only screen and (max-width: 895px) {
-  /* HTML MARCAS */
-  .banner {
-    gap: 40px;
+  .card-descrip {
+    flex-direction: column;
   }
-  /* HTML CONTACTO */
-  .formulario {
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 50px;
-  }
-  .contacto-texto {
+  .card-descrip .descrip-body {
     width: 90%;
+    align-items: center;
+  }
+  .card-descrip .descrip-body p {
     text-align: center;
   }
-}
-@media only screen and (max-width: 795px) {
-  /* HTML INDEX */
-  .descrip-body h1 {
-    font-size: 30px;
-  }
-  .mapa-descrip h2 {
-    font-size: 30px;
-  }
-}
-@media only screen and (max-width: 695px) {
-  /* HTNL INDEX */
   .mapa-body {
     flex-direction: column;
+  }
+  .mapa-body .mapa-descrip {
+    width: 90%;
     align-items: center;
-    gap: 30px;
-  }
-  .mapa-descrip {
-    width: 90%;
-    text-align: center;
-  }
-  .mapa-body iframe {
-    width: 90%;
-  }
-  .mapa-body iframe:hover {
-    width: 100%;
-  }
-  /* HTML MARCAS */
-  .banner {
-    gap: 30px;
-  }
-  /* HTML CONTACTO */
-  .contacto-texto {
-    width: 90%;
   }
 }
 @media only screen and (max-width: 595px) {
-  /* HTML INDEX */
-  .card-descrip img {
-    width: 90%;
-  }
-  /* HTML PRODUCTOS */
-  .card-product {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 40px;
-  }
-  /* FOOTER */
   .footer-list {
+    display: flex;
     flex-direction: column;
+    justify-content: none;
     align-items: center;
-  }
-}
-@media only screen and (max-width: 490px) {
-  /* HTML INDEX */
-  .mapa-body iframe {
-    height: 300px;
-  }
-  .mapa-body iframe:hover {
-    height: 350px;
-  }
-  /* HTML MARCAS */
-  .banner {
-    display: none;
-  }
-  /* HTML CONTACTO */
-  .contacto-texto h2 {
-    font-size: 25px;
-  }
-}
-@media only screen and (max-width: 390px) {
-  /* HTML CONTACTO */
-  .tarjeta-form {
-    width: 300px;
-  }
-  /* FOOTER */
-  .footer p {
-    font-size: 13px;
-  }
-}
-@media only screen and (max-width: 350px) {
-  /* HTML INDEX */
-  .descrip-body h1 {
-    font-size: 25px;
-  }
-  .mapa-descrip h2 {
-    font-size: 25px;
-  }
-  /* HTML CONTACTO */
-  .tarjeta-form {
-    width: 250px;
-  }
-  /* FOOTER */
-  .footer p {
-    font-size: 10px;
+    gap: none;
   }
 }
 .bg-color {
@@ -238,7 +155,7 @@ p {
   display: flex;
   flex-direction: none;
   justify-content: space-evenly;
-  align-items: flex-end;
+  align-items: center;
   gap: 15%;
   padding: 30px;
 }
@@ -305,6 +222,22 @@ p {
   font-size: 20px;
 }
 
+@media only screen and (max-width: 895px) {
+  .mapa-body iframe {
+    width: 90%;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 595px) {
+  .card-descrip img {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 495px) {
+  .descrip-body h1 {
+    font-size: 30px;
+  }
+}
 /* Banner */
 .banner {
   background-color: white;
@@ -312,7 +245,7 @@ p {
   flex-direction: none;
   justify-content: center;
   align-items: none;
-  gap: 50px;
+  gap: 3%;
   padding: 30px;
 }
 .banner img {
@@ -382,6 +315,24 @@ p {
   transform: scale(1.2, 1.2);
 }
 
+@media only screen and (max-width: 950px) {
+  .card-product {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 595px) {
+  .banner {
+    display: none;
+  }
+  .card-product {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 495px) {
+  .info-marca h1 {
+    font-size: 30px;
+  }
+}
 /* Formulario */
 .formulario {
   background-color: #231f20;
@@ -395,7 +346,6 @@ p {
 }
 
 .tarjeta-form {
-  width: 350px;
   padding: 10px;
   background-color: rgb(49, 46, 46);
   border: 2px solid white;
@@ -439,6 +389,12 @@ input, textarea, button {
 }
 .contacto-texto p {
   text-align: left;
+}
+
+@media only screen and (max-width: 495px) {
+  .contacto-texto h2 {
+    font-size: 30px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

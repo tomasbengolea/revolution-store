@@ -5,7 +5,7 @@
 }
 .card-descrip {
     width: 100%;
-    @include flex(none, space-evenly, flex-end, 15%);
+    @include flex(none, space-evenly, center, 15%);
     padding: 30px;
 
     img {
@@ -62,5 +62,35 @@
 
     p {
         font-size: 20px;
+    }
+}
+
+//RESPONSIVO
+
+@media only screen and (max-width: 895px) {
+    
+    .mapa-body {
+
+        iframe {
+            width: 90%;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 595px) {
+    .card-descrip {
+        img {
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and (max-width: 495px) {
+    .descrip-body {
+
+        h1 {
+            font-size: 30px;
+        }
     }
 }

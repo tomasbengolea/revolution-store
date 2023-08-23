@@ -2,7 +2,7 @@
 
 .banner {
     background-color: $bg-color-secondary;
-    @include flex(none, center, none, 50px);
+    @include flex(none, center, none, 3%);
     padding: 30px;
 
     img {
@@ -63,6 +63,35 @@
 
         &:hover {
             transform: scale(1.2,1.2);
+        }
+    }
+}
+
+//RESPONSIVE
+
+@media only screen and (max-width: 950px) {
+
+    .card-product {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 595px) {
+
+    .banner {
+        display: none;
+    }
+    
+    .card-product {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 495px) {
+    .info-marca {
+
+        h1 {
+            font-size: 30px;
         }
     }
 }

@@ -1,167 +1,57 @@
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 1080px) {
 
-    /* HTNL INDEX */
-    .card-descrip {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
+    //HTML CONTANTO
+    .formulario {
+        @include flex(column-reverse, none, center, 30px);
+
+        .contacto-texto {
+            width: 90%;
+            text-align: center;
+
+            p {
+                text-align: center
+            }
+        }
     }
-    
 
-    /* HTML CONTACTO */
-    .contacto-texto h2 {
-        font-size: 30px;
-    }
-
-    /* FOOTER */
+    //FOOTER
     .footer {
-        flex-direction: column;
-        gap: 20px;
+        @include flex-column (none, none, 20px);
         padding: 10px;
     }
 }
 
-@media only screen and (max-width: 950px) {
-
-    /* HTML PRODUCTOS */
-    .card-product {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
 @media only screen and (max-width: 895px) {
 
-    /* HTML MARCAS */
-    .banner {
-        gap: 40px;
-    }
-
-    /* HTML CONTACTO */
-    .formulario {
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 50px;
-    }
-    .contacto-texto {
-        width: 90%;
-        text-align: center;
-    }
-}
-
-@media only screen and (max-width: 795px) {
-
-    /* HTML INDEX */
-    .descrip-body h1 {
-        font-size: 30px;
-    }
-    .mapa-descrip h2 {
-        font-size: 30px;
-    }
-}
-
-@media only screen and (max-width: 695px) {
-
-    /* HTNL INDEX */
-    .mapa-body {
+    //HTML INDEX
+    .card-descrip {
         flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-    .mapa-descrip {
-        width: 90%;
-        text-align: center;
-    }
-    .mapa-body iframe {
-        width: 90%;
 
-        &:hover {
-            width: 100%;
+        .descrip-body {
+            width: 90%;
+            align-items: center;
+
+            p {
+                text-align: center;
+            }
         }
     }
 
-    /* HTML MARCAS */
-    .banner {
-        gap: 30px;
-    }
+    .mapa-body {
+        flex-direction: column;
 
-    /* HTML CONTACTO */
-    .contacto-texto {
-        width: 90%;
+        .mapa-descrip {
+            width: 90%;
+            align-items: center;
+        }
     }
 }
 
 @media only screen and (max-width: 595px) {
 
-    /* HTML INDEX */
-    .card-descrip img {
-        width: 90%;
-    }
-
-    /* HTML PRODUCTOS */
-    .card-product {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 40px;
-    }
-
-    /* FOOTER */
+    //FOOTER
     .footer-list {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media only screen and (max-width: 490px) {
-    
-    /* HTML INDEX */
-    .mapa-body iframe {
-        height: 300px;
-
-        &:hover {
-            height: 350px;
-        }
-    }
-
-    /* HTML MARCAS */
-    .banner {
-        display: none;
-    }
-
-    /* HTML CONTACTO */
-    .contacto-texto h2 {
-        font-size: 25px;
-    }
-}
-
-@media only screen and (max-width: 390px) {
-
-    /* HTML CONTACTO */
-    .tarjeta-form {
-        width: 300px;
-    }
-
-    /* FOOTER */
-    .footer p {
-        font-size: 13px;
-    }
-}
-
-@media only screen and (max-width: 350px) {
-
-    /* HTML INDEX */
-    .descrip-body h1 {
-        font-size: 25px;
-    }
-    .mapa-descrip h2 {
-        font-size: 25px;
-    }
-
-    /* HTML CONTACTO */
-    .tarjeta-form {
-        width: 250px;
-    }
-
-    /* FOOTER */
-    .footer p {
-        font-size: 10px;
+        @include flex-column (none, center, none);
     }
 }
